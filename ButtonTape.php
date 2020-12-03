@@ -16,7 +16,7 @@ echo "gagné";
 }
 
 elseif ($output==0 && $_SESSION['livesButton']<=0) {
-echo "you have no more life for this bomb"
+echo "you have no more life for this bomb";
 ?>
 <form action="/POCwebpage.html" method="GET">
   <input type="hidden" name="go" value="run">
