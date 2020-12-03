@@ -2,6 +2,12 @@
 <body>
 
 <?php
+session_start();
+
+if(!isset($_SESSION['livesWebcam'])){
+$_SESSION['livesWebcam']=3;
+}
+
 $command = escapeshellcmd('python cameraAffiche.py');
 $output = shell_exec($command);
 echo $output

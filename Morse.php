@@ -2,6 +2,12 @@
 <body>
 
 <?php
+session_start();
+
+if(!isset($_SESSION['livesMorse'])){
+$_SESSION['livesMorse']=3;
+}
+
 $command = escapeshellcmd('python Morse.py');
 $output = shell_exec($command);
 ?>

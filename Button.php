@@ -2,10 +2,10 @@
 <body>
 
 <?php
-
-if(!isset($_SESSION["livesButton"])){
 session_start();
-$_SESSION['livesButton'] = 3;
+
+if(!isset($_SESSION['livesButton'])){
+$_SESSION['livesButton']=3;
 }
 
 $command = escapeshellcmd('python ButtonTape.py');
