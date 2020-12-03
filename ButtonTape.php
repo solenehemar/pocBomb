@@ -2,7 +2,7 @@
 $command = escapeshellcmd('python Button.py');
 $output = shell_exec($command);
 
-if ($command==1){
+if ($output==1){
 echo "gagné";
 }
 else{

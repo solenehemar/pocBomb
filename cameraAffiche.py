@@ -9,10 +9,11 @@ f = open("camera.csv", 'rU')
 r = csv.reader(f)
 liste = list(r)
 objet = liste[ligne][0].split(";")[0] #premier mot du contenu de la ligne
+couleur = liste[ligne][0].split(";")[1] #premier mot du contenu de la ligne
 
 
 
-print objet
+print couleur
 
 
 

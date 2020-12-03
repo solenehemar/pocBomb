@@ -38,7 +38,6 @@ if value == 1:
 
         while datetime.now() < datetime_new:
                 value = (GPIO.input(button))
-		print value
 
                 if value == 1:
                          count = count + 1
@@ -50,7 +49,6 @@ if value == 1:
 
 
 
-print count
 
 if count==tape:
 	print 1
