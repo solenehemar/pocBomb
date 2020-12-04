@@ -20,8 +20,6 @@ ligne = randint(0,5) #ligne aleatoire du csv
 f = open("morse.csv", 'rU')
 r = csv.reader(f)
 liste = list(r)
-mot = liste[ligne][0].split(";")[1] #premier mot du contenu de la ligne numero "ligne" (car la ligne numero "ligne" est un tableau contenant un string)
-
 frequence = liste[ligne][0].split(";")[0]
 print frequence
 
