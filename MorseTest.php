@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (if ($_GET['freq']==$_GET['response']){
+if($_GET['freq']==$_GET['response']){
 echo "winner";
 ?>
 
@@ -16,7 +16,7 @@ else{
 echo "loser\n";
 $_SESSION['livesMorse']=$_SESSION['livesMorse']-1;
 
-if (if ($_GET['freq']!=$_GET['response']) && $_SESSION['livesMorse']<=0) {
+if ($_GET['freq']!=$_GET['response'] && $_SESSION['livesMorse']<=0) {
 echo "you have no more life for this bomb";
 ?>
 <form action="/POCwebpage.html" method="GET">
