@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from random import *
 
 
-button= 24
+button=24
 count=0
 
 GPIO.setmode(GPIO.BCM)

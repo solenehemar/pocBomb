@@ -4,7 +4,7 @@ import time
 from random import *
 import sys, argparse, csv
 
-gpio=24
+gpio=23
 GPIO.setmode(GPIO.BCM) #the number of the gpio
 GPIO.setwarnings(False) #to disable warnings
 

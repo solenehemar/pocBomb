@@ -5,7 +5,7 @@ $output = shell_exec($command);
 
 
 if ($output==1){
-echo "gagné";
+echo "winner";
 ?>
 
 <form action="/POCwebpage.html" method="GET">
@@ -15,7 +15,12 @@ echo "gagné";
 <?php
 }
 
-elseif ($output==0 && $_SESSION['livesButton']<=0) {
+
+else{
+echo "loser\n";
+$_SESSION['livesButton']=$_SESSION['livesButton']-1;
+
+if ($_SESSION['livesButton']<1) {
 echo "you have no more life for this bomb";
 ?>
 <form action="/POCwebpage.html" method="GET">
@@ -26,10 +31,7 @@ echo "you have no more life for this bomb";
 session_destroy();
 }
 
-
 else{
-echo "perdu\n";
-$_SESSION['livesButton']=$_SESSION['livesButton']-1;
 echo "you have ".$_SESSION['livesButton']." lives left";
 ?>
 
@@ -44,6 +46,7 @@ echo "you have ".$_SESSION['livesButton']." lives left";
 </form>
 
 <?php
+}
 }
 
 

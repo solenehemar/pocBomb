@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <?php
 session_start();
 
@@ -18,6 +15,3 @@ echo $output
   <input type="hidden" name="act" value="run">
   <input type="submit" value="Play !">
 </form>
-
-</body>
-</html>
