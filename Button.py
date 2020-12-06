@@ -2,7 +2,6 @@ import RPi.GPIO as GPIO
 import time
 import sys, csv
 from datetime import datetime, timedelta
-from random import *
 
 
 button=24
