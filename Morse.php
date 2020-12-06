@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <?php
 session_start();
 
@@ -25,6 +22,3 @@ $output = shell_exec($command);
     <button>Send value</button>
   </div>
 </form>
-
-</body>
-</html>
