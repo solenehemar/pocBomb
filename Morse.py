@@ -34,18 +34,18 @@ for i in range(2, len(liste[ligne][0].split(";"))):
 	val = liste[ligne][0].split(";")[i]
 	print val
 
-	if val == '0' : #espace dans csv
-		GPIO.output(LED, GPIO.LOW) #the gpio is low (so the led light off)
+	if val == '0' : #espace
+		GPIO.output(LED, GPIO.LOW) #the gpio is low (so the led lights off)
 		time.sleep(2)
 
-	if val == '1' : #point dans csv
-		GPIO.output(LED, GPIO.HIGH) #the gpio is high (so the led light on)
+	if val == '1' : #point
+		GPIO.output(LED, GPIO.HIGH) #the gpio is high (so the led lights on)
 		time.sleep(1)
 		GPIO.output(LED, GPIO.LOW)
 		time.sleep(1)
 
-	if val == '2' : #trait dans csv
-		GPIO.output(LED, GPIO.HIGH) #the gpio is high (so the led light on)
+	if val == '2' : #trait
+		GPIO.output(LED, GPIO.HIGH) #the gpio is high (so the led lights on)
 		time.sleep(3)
 		GPIO.output(LED, GPIO.LOW)
 		time.sleep(1)
