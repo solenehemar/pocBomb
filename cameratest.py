@@ -40,7 +40,7 @@ CLASSES = ["arriere-plan", "avion", "velo", "oiseau", "bateau",
 	"bouteille", "autobus", "voiture", "chat", "chaise", "vache", "table",
 	"chien", "cheval", "moto", "personne", "plante en pot", "mouton",
 	"sofa", "train", "moniteur"]
-COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
+
 
 # chargement des fichiers depuis le repertoire de stockage 
 net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
@@ -77,17 +77,9 @@ for i in range (5) :
 		# supprimer les detections faibles 
 		# inferieures a la probabilite minimale
 		if confidence > args["confidence"] and CLASSES[idx] == objet :
-			# extraire l'index du type d'objet detecte
-			# calcul des coordonnees de la fenetre de detection 
+
 			
                         verif=1
-                        i=9
-
 	time.sleep(1)
-
-
+	
 print verif
-                        
- 
-cv2.destroyAllWindows()
-vs.stop()
